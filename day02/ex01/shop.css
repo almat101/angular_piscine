@@ -30,10 +30,15 @@ h1 {
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	/* border-radius: 10%; */
+	width: 200px; /* Set the width of the image */
+	height: 200px; /* Set the height of the image */
+	object-fit: cover; /* This will ensure that the image maintains its aspect ratio */
 }
+
+
 
 .details {
     width: 100%;
@@ -100,4 +105,10 @@ img {
 
 .create-btn:hover {
 	background-color: #218838;
+}
+
+.price
+{
+	font-size: 1.5em;
+	font-weight: bold;
 }

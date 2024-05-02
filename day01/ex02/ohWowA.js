@@ -16,31 +16,37 @@ function createCard() {
     h1.textContent = `User Card ${cardCounter}`;
     newCard.appendChild(h1);
 
+    const table = document.createElement('table');
+	table.className = 'details';
+
+	const tr = document.createElement('tr');
+	const td = document.createElement('td');
+
     let img = document.createElement('img');
     img.src = "https://upload.wikimedia.org/wikipedia/en/5/56/PrisonMike.png";
     img.alt = "Profile Picture";
-    newCard.appendChild(img);
+    td.appendChild(img);
 
-    let details = document.createElement('div');
-    details.className = 'details';
 
     let pName = document.createElement('p');
     pName.className = 'name';
     pName.textContent = 'Name: Prison Mike';
-    details.appendChild(pName);
+  	td.appendChild(pName);
 
     let pDescription = document.createElement('p');
     pDescription.className = 'description';
     pDescription.textContent = 'Description: Web Developer';
-    details.appendChild(pDescription);
+    td.appendChild(pDescription);
 
     let aContact = document.createElement('a');
     aContact.href = "https://pointerpointer.com/";
     aContact.className = 'contact-btn';
     aContact.textContent = 'Contact';
-    details.appendChild(aContact);
+    td.appendChild(aContact);
 
-    newCard.appendChild(details);
+	tr.appendChild(td);
+	table.appendChild(tr);
+	newCard.appendChild(table);
 
     let cardContainer = document.querySelector('.card-container');
     cardContainer.appendChild(newCard);
