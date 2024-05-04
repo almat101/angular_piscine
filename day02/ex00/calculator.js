@@ -12,12 +12,12 @@ function caluculator()
 		// Get the values from the input fields
 		const value1 = parseFloat(input1.value);
 		if (value1 < 0) {
-			alert("*sympathetic message of your choice*");
+			alert("*sympathetic beep* Please enter a valid number for value1.");
 			return;
 		}
 		const value2 = parseFloat(input2.value);
 		if (value2 < 0) {
-			alert("*sympathetic message of your choice*");
+			alert("*sympathetic beep* Please enter a valid number for value2.");
 			return;
 		}
 		const operation = select.value;
