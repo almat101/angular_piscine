@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="shop.css">
+	<title>User Card</title>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<h1>TS SHOP</h1>
+		<!-- Navigation Menu -->
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#shop">Shop</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li>
+					<div class="cart-icon">
+						🛒 <div class="cart-number">0</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="card-container" id="cardContainer"></div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Do you want to add this product to the cart?</p>
+			<button id="addToCartButton">Add to Cart</button>
+		</div>
+	</div>
+	
+	<script src="shop.js"></script>
+
+	<!-- Footer -->
+	<footer>
+		<p>Copyright &copy; 2024 ts_shop</p>
+	</footer>
+
+</body>
+</html>
