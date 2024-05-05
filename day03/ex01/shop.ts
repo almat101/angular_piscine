@@ -21,7 +21,7 @@ fetch('store.json')
 			card.classList.add('product');
 
 			// Create and fill elements for the card
-			const title = document.createElement('h1');
+			const title = document.createElement('h2');
 			title.textContent = item.title;
 			card.appendChild(title);
 
@@ -104,8 +104,3 @@ addToCartButton.onclick = function() {
         modal.style.display = "none";
     }
 }
-
-// // Attach the showAddToCartModal function to the click event of each product
-// document.querySelectorAll('.product').forEach(product => {
-//     product.addEventListener('click', showAddToCartModal);
-// });

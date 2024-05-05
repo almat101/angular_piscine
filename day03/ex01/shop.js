@@ -9,7 +9,7 @@ fetch('store.json')
         card.classList.add('card');
         card.classList.add('product');
         // Create and fill elements for the card
-        var title = document.createElement('h1');
+        var title = document.createElement('h2');
         title.textContent = item.title;
         card.appendChild(title);
         var table = document.createElement('table');
@@ -78,7 +78,3 @@ addToCartButton.onclick = function () {
         modal.style.display = "none";
     }
 };
-// // Attach the showAddToCartModal function to the click event of each product
-// document.querySelectorAll('.product').forEach(product => {
-//     product.addEventListener('click', showAddToCartModal);
-// });
