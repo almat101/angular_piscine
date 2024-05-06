@@ -22,6 +22,13 @@ function caluculator()
 		}
 		const operation = select.value;
 
+		if (isNaN(value1) || isNaN(value2))
+		{
+			alert("*sympathetic beep* Please enter a valid number for the values.");
+			return ;
+
+		}
+
 		// Perform the calculation based on the selected operation
 		let result;
 		switch (operation) {
