@@ -1,1 +1,39 @@
-<p>calculator works!</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+ 
+    <mat-form-field>
+      <mat-label>Input 1</mat-label>
+      <input matInput type="number" formControlName="input1" required>
+      <mat-error *ngIf="form?.get('input1')?.hasError('required')">
+        Input 1 is required with positive numbers only
+      </mat-error>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Operation</mat-label>
+      <mat-select formControlName="operation" required>
+        <mat-option value="addition">+</mat-option>
+        <mat-option value="subtraction">-</mat-option>
+        <mat-option value="multiplication">*</mat-option>
+        <mat-option value="division">/</mat-option>
+      </mat-select>
+      <mat-error *ngIf="form?.get('operation')?.hasError('required')">
+        An operation is required
+      </mat-error>
+    </mat-form-field>
+        
+    <mat-form-field>
+      <mat-label>input 2</mat-label>
+      <input matInput type="number" formControlName="input2" required>
+      <mat-error *ngIf="form?.get('input2')?.hasError('required')">
+        Input 2 is required with positive numbers only
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Calculate me baby!</button>
+
+    <div *ngIf="result != null" class="calculator-result">
+      Result: {{ result }}
+    </div>
+  </form>
+

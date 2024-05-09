@@ -1,0 +1,5 @@
+.calculator-container {
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Center content horizontally */
+    height: 100vh; /* Optional: Set the height to fill the viewport */
+  }
