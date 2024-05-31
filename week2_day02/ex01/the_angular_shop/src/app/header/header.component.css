@@ -1,0 +1,43 @@
+.shop-header {
+	color: #fff;
+	background: linear-gradient(to bottom, #232f3e 0%,#131a22 100%);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo img {
+	height: 40px; /* Adjust the value to your desired logo size */
+  }
+
+  .nav {
+	padding: 10px 0;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	margin: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+	color: #007bff;
+}
+
+/* Active link */
+nav ul li a.active {
+	color: #007bff;
+}

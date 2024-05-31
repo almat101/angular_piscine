@@ -1,0 +1,38 @@
+.about-us {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+
+  .description {
+	line-height: 1.5;
+	margin-bottom: 20px;
+  }
+
+  .about-us-image {
+	width: 100%;
+	max-width: 400px;
+	margin-bottom: 20px;
+  }
+
+  .team-members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+
+  .team-member {
+	width: calc(33% - 20px); /* 33% width minus margins */
+	text-align: center;
+	margin-bottom: 20px;
+  }
+
+  .team-member img {
+	width: 100%;
+	border-radius: 50%;
+	margin-bottom: 10px;
+  }
+
+  h4 {
+	margin-bottom: 5px;
+  }

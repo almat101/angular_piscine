@@ -1,0 +1,14 @@
+.shop-button,
+.learn-more-button {
+	background-color: #232f3e;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer; /* Indicate clickable element */
+	transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+
+  .shop-button:hover { /* Styles on hover */
+	background-color: #0067cc;
+  }
